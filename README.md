@@ -4,8 +4,6 @@ An immersive, scroll-driven journey through Ancient Greece, built with plain HTM
 
 ![Screenshot placeholder](docs/screenshot.png)
 
-> Replace `docs/screenshot.png` with a real screenshot of the page (see "Add your screenshot" below).
-
 ## About
 
 The Greek World is a single-page, cinematic landing page that teaches the story of Ancient Greece through scrolling. Visitors move through 12 sections covering history, an interactive timeline, the city-states, philosophy, mythology, architecture, wars, Alexander the Great and the legacy of Greece. There is no framework and no build step: open it in a browser and it runs.
