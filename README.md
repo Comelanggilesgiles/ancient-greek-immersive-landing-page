@@ -2,7 +2,7 @@
 
 An immersive, scroll-driven journey through Ancient Greece, built with plain HTML, CSS and JavaScript.
 
-![Screenshot placeholder](docs/screenshot.png)
+![Screenshot placeholder](screenshot.png)
 
 ## About
 
