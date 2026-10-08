@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0D0D0D">
+<meta name="description" content="The Greek World — an immersive journey through the civilization that shaped the foundations of Western history: philosophy, democracy, art, architecture and war.">
+<title>The Greek World — A Journey Through Ancient Greece</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230D0D0D'/%3E%3Cpath d='M7 25h18M9 21h14M11 8h10v13H11z' stroke='%23FFC928' stroke-width='2' stroke-linecap='square' fill='none'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============================================================ -->
+<!-- SCROLL PROGRESS + CUSTOM CURSOR                              -->
+<!-- ============================================================ -->
+<div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar" id="scrollBar"></span></div>
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor__ring"></div>
+  <div class="cursor__dot"></div>
+</div>
+
+<!-- ============================================================ -->
+<!-- NAVIGATION                                                   -->
+<!-- ============================================================ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#hero" data-magnetic aria-label="The Greek World — back to top">
+      <span class="nav__logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16M6 16h12M8 4h8v12H8z"/><path d="M8 4 4 6M16 4l4 2"/></svg>
+      </span>
+      <span class="nav__logo-text">GREEK<em>WORLD</em></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#hero"        class="nav__link">Home</a>
+      <a href="#history"     class="nav__link">History</a>
+      <a href="#timeline"    class="nav__link">Timeline</a>
+      <a href="#city-states" class="nav__link">City-States</a>
+      <a href="#philosophy"  class="nav__link">Philosophy</a>
+      <a href="#mythology"   class="nav__link">Mythology</a>
+      <a href="#architecture"class="nav__link">Architecture</a>
+      <a href="#alexander"   class="nav__link">Alexander</a>
+      <a href="#legacy"      class="nav__link">Legacy</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Full-screen animated mobile navigation -->
+<div class="mobile-menu" id="mobileMenu" inert>
+  <nav class="mobile-menu__nav" aria-label="Mobile primary">
+    <a href="#hero"         class="mobile-menu__link" style="--i:0"><span class="mobile-menu__num">01</span>Home</a>
+    <a href="#history"      class="mobile-menu__link" style="--i:1"><span class="mobile-menu__num">02</span>History</a>
+    <a href="#timeline"     class="mobile-menu__link" style="--i:2"><span class="mobile-menu__num">03</span>Timeline</a>
+    <a href="#city-states"  class="mobile-menu__link" style="--i:3"><span class="mobile-menu__num">04</span>City-States</a>
+    <a href="#philosophy"   class="mobile-menu__link" style="--i:4"><span class="mobile-menu__num">05</span>Philosophy</a>
+    <a href="#mythology"    class="mobile-menu__link" style="--i:5"><span class="mobile-menu__num">06</span>Mythology</a>
+    <a href="#architecture" class="mobile-menu__link" style="--i:6"><span class="mobile-menu__num">07</span>Architecture</a>
+    <a href="#wars"         class="mobile-menu__link" style="--i:7"><span class="mobile-menu__num">08</span>Wars</a>
+    <a href="#alexander"    class="mobile-menu__link" style="--i:8"><span class="mobile-menu__num">09</span>Alexander</a>
+    <a href="#legacy"       class="mobile-menu__link" style="--i:9"><span class="mobile-menu__num">10</span>Legacy</a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <p>«Know thyself» — inscribed at the Temple of Apollo, Delphi</p>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============================================================ -->
+<!-- 1 · HERO                                                     -->
+<!-- ============================================================ -->
+<section class="hero" id="hero">
+  <div class="hero__bg" data-parallax="0.28">
+    <img src="https://images.pexels.com/photos/15238794/pexels-photo-15238794.jpeg?auto=compress&cs=tinysrgb&w=1920"
+         alt="Reconstructed ancient Greek marble columns receding into dramatic perspective"
+         class="hero__bg-img" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <div class="hero__grain" aria-hidden="true"></div>
+  <canvas class="hero__particles" id="particles" aria-hidden="true"></canvas>
+
+  <!-- Floating Greek geometric patterns -->
+  <div class="hero__ornaments" aria-hidden="true">
+    <svg class="orn orn--1" viewBox="0 0 100 100"><path d="M50 4 96 50 50 96 4 50Z" fill="none" stroke="currentColor" stroke-width="0.8"/><path d="M50 22 78 50 50 78 22 50Z" fill="none" stroke="currentColor" stroke-width="0.8"/><circle cx="50" cy="50" r="9" fill="none" stroke="currentColor" stroke-width="0.8"/></svg>
+    <svg class="orn orn--2" data-parallax="0.75" viewBox="0 0 100 40"><path d="M0 20h100M20 0v40M40 0v40M60 0v40M80 0v40" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    <svg class="orn orn--3" data-parallax="0.35" viewBox="0 0 120 40"><path d="M0 20 20 0 40 20 60 0 80 20 100 0 120 20" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    <span class="orn orn--ring" data-parallax="0.6"></span>
+  </div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow" data-reveal="fade">
+      <span class="rule" aria-hidden="true"></span>An Interactive History
+    </p>
+    <h1 class="hero__title">
+      <span class="hero__title-line" data-reveal="up" style="--d:.05s">THE GREEK</span>
+      <span class="hero__title-line hero__title-line--gold" data-reveal="up" style="--d:.18s">WORLD</span>
+    </h1>
+    <p class="hero__sub" data-reveal="up" style="--d:.34s">
+      A journey through the civilization that shaped the foundations of Western history.
+    </p>
+    <div class="hero__actions" data-reveal="up" style="--d:.48s">
+      <a href="#history" class="btn btn--gold" data-magnetic>
+        <span>EXPLORE HISTORY</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#timeline" class="btn btn--ghost" data-magnetic><span>BEGIN THE JOURNEY</span></a>
+    </div>
+  </div>
+
+  <div class="hero__meta" aria-hidden="true">
+    <span class="hero__meta-item">800 BCE</span>
+    <span class="hero__meta-line"></span>
+    <span class="hero__meta-item">146 BCE</span>
+  </div>
+
+  <a class="hero__scroll" href="#history" aria-label="Scroll to introduction">
+    <span class="hero__scroll-text">SCROLL</span>
+    <span class="hero__scroll-line"></span>
+  </a>
+</section>
+
+<!-- Meander divider -->
+<div class="meander" aria-hidden="true"></div>
+
+<!-- ============================================================ -->
+<!-- 2 · INTRODUCTION                                              -->
+<!-- ============================================================ -->
+<section class="section history" id="history" aria-labelledby="history-title">
+  <div class="container">
+    <div class="history__grid">
+      <div class="history__copy">
+        <p class="eyebrow" data-reveal="fade"><span class="eyebrow__num">01</span>A Civilization That Changed the World</p>
+        <h2 class="section-title" id="history-title" data-reveal="up">
+          Where the <em>Western mind</em> learned to ask questions.
+        </h2>
+        <p class="lede" data-reveal="up" style="--d:.08s">
+          In a scattered archipelago of mountains and sea, a people who never unified into an empire
+          produced something far more durable: a way of thinking. Between the eighth and second
+          centuries BCE, the Greek world replaced mythic explanation with reasoned argument, and
+          replaced the rule of kings with the rule of citizens.
+        </p>
+        <p class="body-text" data-reveal="up" style="--d:.16s">
+          Greek ideas did not stay in Greece. They travelled through Alexander's conquests into
+          Egypt and Persia, were carried to Rome, preserved in Baghdad and Byzantium, and returned
+          to Europe to ignite the Renaissance. Almost every institution we call modern — the
+          academy, the theatre, the senate, the laboratory, the hospital — speaks with a Greek accent.
+        </p>
+
+        <ul class="influence-list" data-stagger>
+          <li data-reveal="up"><strong>Philosophy</strong><span>Rational inquiry into truth, ethics and being</span></li>
+          <li data-reveal="up"><strong>Democracy</strong><span>Citizen rule, debate and the rule of law</span></li>
+          <li data-reveal="up"><strong>Science</strong><span>Observation, hypothesis and natural causation</span></li>
+          <li data-reveal="up"><strong>Mathematics</strong><span>Proof, geometry and the axiomatic method</span></li>
+          <li data-reveal="up"><strong>Art</strong><span>Naturalism, proportion and the human form</span></li>
+          <li data-reveal="up"><strong>Architecture</strong><span>The orders, the temple and the theatre</span></li>
+          <li data-reveal="up"><strong>Literature</strong><span>Epic, lyric, tragedy and comedy</span></li>
+          <li data-reveal="up"><strong>Politics</strong><span>Constitution, citizenship and political theory</span></li>
+        </ul>
+      </div>
+
+      <div class="history__media">
+        <figure class="frame frame--tall" data-reveal="scale">
+          <img src="https://images.pexels.com/photos/30284413/pexels-photo-30284413.jpeg?auto=compress&cs=tinysrgb&w=900"
+               alt="An ancient Greek marble statue lit by dramatic directional light"
+               loading="lazy" decoding="async" width="900" height="1350">
+          <figcaption>Marble, light and silence — the materials of the Greek ideal.</figcaption>
+        </figure>
+        <figure class="frame frame--small" data-reveal="scale" style="--d:.2s">
+          <img src="https://images.pexels.com/photos/6714846/pexels-photo-6714846.jpeg?auto=compress&cs=tinysrgb&w=700"
+               alt="Close-up of a classical marble bust on a dark background"
+               loading="lazy" decoding="async" width="700" height="467">
+        </figure>
+      </div>
+    </div>
+
+    <!-- Animated statistics -->
+    <div class="stats" data-stagger>
+      <div class="stat" data-reveal="up">
+        <span class="stat__value"><span data-count="700">0</span><i>+</i></span>
+        <span class="stat__label">Years of major civilization</span>
+      </div>
+      <div class="stat" data-reveal="up">
+        <span class="stat__value"><span data-count="100">0</span><i>+</i></span>
+        <span class="stat__label">Major city-states and regions</span>
+      </div>
+      <div class="stat" data-reveal="up">
+        <span class="stat__value"><span data-count="300">0</span><i>+</i></span>
+        <span class="stat__label">Philosophers, scientists, artists &amp; leaders</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander" aria-hidden="true"></div>
+
+<!-- ============================================================ -->
+<!-- 3 · INTERACTIVE TIMELINE                                      -->
+<!-- ============================================================ -->
+<section class="section timeline" id="timeline" aria-labelledby="timeline-title">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow" data-reveal="fade"><span class="eyebrow__num">02</span>Chronology</p>
+      <h2 class="section-title section-title--display" id="timeline-title" data-reveal="up">THE AGE OF GREECE</h2>
+      <p class="section-sub" data-reveal="up" style="--d:.1s">
+        Three thousand years, from palace citadels to the edges of India. Select a period to travel there.
+      </p>
+    </header>
+  </div>
+
+  <div class="tl">
+    <!-- Horizontal rail on desktop, vertical on mobile -->
+    <div class="tl__rail" id="tlRail">
+      <div class="tl__progress" aria-hidden="true"><span id="tlProgress"></span></div>
+      <ol class="tl__track" id="tlTrack" role="tablist" aria-label="Historical periods">
+        <li class="tl__item" role="presentation">
+          <button class="tl__node is-active" role="tab" aria-selected="true" aria-controls="tlPanel" id="tl-tab-0" data-index="0">
+            <span class="tl__dot" aria-hidden="true"></span>
+            <span class="tl__date">2000–1100 BCE</span>
+            <span class="tl__name">Minoan &amp; Mycenaean Greece</span>
+          </button>
+        </li>
+        <li class="tl__item" role="presentation">
+          <button class="tl__node" role="tab" aria-selected="false" aria-controls="tlPanel" id="tl-tab-1" data-index="1" tabindex="-1">
+            <span class="tl__dot" aria-hidden="true"></span>
+            <span class="tl__date">1100–800 BCE</span>
+            <span class="tl__name">Greek Dark Ages</span>
+          </button>
+        </li>
+        <li class="tl__item" role="presentation">
+          <button class="tl__node" role="tab" aria-selected="false" aria-controls="tlPanel" id="tl-tab-2" data-index="2" tabindex="-1">
+            <span class="tl__dot" aria-hidden="true"></span>
+            <span class="tl__date">800–500 BCE</span>
+            <span class="tl__name">Archaic Period</span>
+          </button>
+        </li>
+        <li class="tl__item" role="presentation">
+          <button class="tl__node" role="tab" aria-selected="false" aria-controls="tlPanel" id="tl-tab-3" data-index="3" tabindex="-1">
+            <span class="tl__dot" aria-hidden="true"></span>
+            <span class="tl__date">500–323 BCE</span>
+            <span class="tl__name">Classical Greece</span>
+          </button>
+        </li>
+        <li class="tl__item" role="presentation">
+          <button class="tl__node" role="tab" aria-selected="false" aria-controls="tlPanel" id="tl-tab-4" data-index="4" tabindex="-1">
+            <span class="tl__dot" aria-hidden="true"></span>
+            <span class="tl__date">323–146 BCE</span>
+            <span class="tl__name">Hellenistic World</span>
+          </button>
+        </li>
+        <li class="tl__item" role="presentation">
+          <button class="tl__node" role="tab" aria-selected="false" aria-controls="tlPanel" id="tl-tab-5" data-index="5" tabindex="-1">
+            <span class="tl__dot" aria-hidden="true"></span>
+            <span class="tl__date">146 BCE onward</span>
+            <span class="tl__name">Roman Greece</span>
+          </button>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Live content panel -->
+    <div class="tl__panel" id="tlPanel" role="tabpanel" aria-labelledby="tl-tab-0" data-parallax="0.04">
+      <div class="tl__panel-media">
+        <img id="tlImage" src="https://images.pexels.com/photos/34149577/pexels-photo-34149577.jpeg?auto=compress&cs=tinysrgb&w=1200"
+             alt="Ancient ceramic amphorae displayed against a weathered stone wall"
+             loading="lazy" decoding="async" width="1200" height="800">
+        <span class="tl__panel-badge" id="tlBadge">Period I</span>
+      </div>
+      <div class="tl__panel-body">
+        <p class="eyebrow" id="tlEyebrow">2000–1100 BCE</p>
+        <h3 class="tl__panel-title" id="tlTitle">Minoan &amp; Mycenaean Greece</h3>
+        <p class="tl__panel-text" id="tlText">
+          Before "Greece" existed, Bronze Age palace cultures flourished on Crete and the Greek
+          mainland. The Minoans of Knossos built multi-storey labyrinths and painted dolphins and
+          bulls; the Mycenaeans of the Peloponnese built cyclopean citadels and warrior kings.
+        </p>
+        <ul class="tl__facts" id="tlFacts">
+          <li><strong>Knossos</strong><span>The great Minoan palace complex on Crete</span></li>
+          <li><strong>Linear B</strong><span>The earliest written form of Greek, used for palace accounts</span></li>
+          <li><strong>Mycenae</strong><span>Citadel of Agamemnon and the Lion Gate</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander" aria-hidden="true"></div>
+
+<!-- ============================================================ -->
+<!-- 4 · THE CITY-STATES                                           -->
+<!-- ============================================================ -->
+<section class="section city" id="city-states" aria-labelledby="city-title">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow" data-reveal="fade"><span class="eyebrow__num">03</span>The Polis</p>
+      <h2 class="section-title section-title--display" id="city-title" data-reveal="up">THE CITY-STATES</h2>
+      <p class="section-sub" data-reveal="up" style="--d:.1s">
+        Greece was never one country. It was hundreds of independent <em>poleis</em> — each with its own
+        government, dialect, gods and grudges.
+      </p>
+    </header>
+
+    <div class="city__grid" data-stagger>
+      <article class="city-card" data-reveal="up">
+        <div class="city-card__media">
+          <img src="https://images.pexels.com/photos/36621593/pexels-photo-36621593.jpeg?auto=compress&cs=tinysrgb&w=900"
+               alt="The ruins of the Parthenon on the Acropolis of Athens" loading="lazy" decoding="async" width="900" height="600">
+          <span class="city-card__glyph" aria-hidden="true">ΑΘ</span>
+        </div>
+        <div class="city-card__body">
+          <h3 class="city-card__title">ATHENS</h3>
+          <p class="city-card__text">Philosophy, democracy, art and culture. On the Acropolis the Athenians built in marble the image of their own confidence — and invented the idea that ordinary citizens could govern themselves.</p>
+          <dl class="city-card__meta">
+            <div><dt>Peak</dt><dd>5th c. BCE</dd></div>
+            <div><dt>Legacy</dt><dd>Democracy · Drama · Philosophy</dd></div>
+          </dl>
+          <button class="link-btn" data-modal="athens" data-magnetic>
+            <span>Explore</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </article>
+
+      <article class="city-card" data-reveal="up">
+        <div class="city-card__media">
+          <img src="https://images.pexels.com/photos/13898501/pexels-photo-13898501.jpeg?auto=compress&cs=tinysrgb&w=900"
+               alt="Low angle view of ancient stone ruins against the sky" loading="lazy" decoding="async" width="900" height="600">
+          <span class="city-card__glyph" aria-hidden="true">ΛΑΚ</span>
+        </div>
+        <div class="city-card__body">
+          <h3 class="city-card__title">SPARTA</h3>
+          <p class="city-card__text">Military discipline, strength and warrior culture. In the Eurotas valley Sparta traded luxury for obedience, raising an army that no Greek state could defeat on land for two centuries.</p>
+          <dl class="city-card__meta">
+            <div><dt>Peak</dt><dd>6th–4th c. BCE</dd></div>
+            <div><dt>Legacy</dt><dd>Discipline · Hoplite warfare</dd></div>
+          </dl>
+          <button class="link-btn" data-modal="sparta" data-magnetic>
+            <span>Explore</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </article>
+
+      <article class="city-card" data-reveal="up">
+        <div class="city-card__media">
+          <img src="https://images.pexels.com/photos/14754631/pexels-photo-14754631.jpeg?auto=compress&cs=tinysrgb&w=900"
+               alt="Ancient clay storage jars arranged against a rough stone wall" loading="lazy" decoding="async" width="900" height="600">
+          <span class="city-card__glyph" aria-hidden="true">ΚΟΡ</span>
+        </div>
+        <div class="city-card__body">
+          <h3 class="city-card__title">CORINTH</h3>
+          <p class="city-card__text">Trade, wealth and strategic importance. Sitting on the narrow isthmus between two seas, Corinth grew rich from the traffic of the entire Mediterranean and coined the style of pottery the world copied.</p>
+          <dl class="city-card__meta">
+            <div><dt>Peak</dt><dd>7th–6th c. BCE</dd></div>
+            <div><dt>Legacy</dt><dd>Commerce · Corinthian order</dd></div>
+          </dl>
+          <button class="link-btn" data-modal="corinth" data-magnetic>
+            <span>Explore</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </article>
+
+      <article class="city-card" data-reveal="up">
+        <div class="city-card__media">
+          <img src="https://images.pexels.com/photos/32599351/pexels-photo-32599351.jpeg?auto=compress&cs=tinysrgb&w=900"
+               alt="The ancient theatre of Epidaurus with its curved stone seating" loading="lazy" decoding="async" width="900" height="600">
+          <span class="city-card__glyph" aria-hidden="true">ΘΗΒ</span>
+        </div>
+        <div class="city-card__body">
+          <h3 class="city-card__title">THEBES</h3>
+          <p class="city-card__text">Military power and political influence. Leader of the Boeotian League, Thebes broke Spartan supremacy at Leuctra and, for a brief moment, held the leadership of Greece in its hands.</p>
+          <dl class="city-card__meta">
+            <div><dt>Peak</dt><dd>4th c. BCE</dd></div>
+            <div><dt>Legacy</dt><dd>The Sacred Band · Leuctra</dd></div>
+          </dl>
+          <button class="link-btn" data-modal="thebes" data-magnetic>
+            <span>Explore</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 5 · ATHENS VS SPARTA                                          -->
+<!-- ============================================================ -->
+<section class="versus" id="athens-sparta" aria-labelledby="versus-title">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow" data-reveal="fade"><span class="eyebrow__num">04</span>Two Ways of Being Greek</p>
+      <h2 class="section-title section-title--display" id="versus-title" data-reveal="up">ATHENS <span class="versus__amp">vs.</span> SPARTA</h2>
+      <p class="section-sub" data-reveal="up" style="--d:.1s">
+        Same language, same gods, same poetry — and two utterly opposed answers to the question
+        of how a human being should live.
+      </p>
+    </header>
+  </div>
+
+  <div class="versus__split" id="versusSplit">
+    <article class="versus__side versus__side--athens" data-reveal="right">
+      <div class="versus__media" data-parallax="0.08">
+        <img src="https://images.pexels.com/photos/14500447/pexels-photo-14500447.jpeg?auto=compress&cs=tinysrgb&w=1200"
+             alt="The Parthenon temple on the Athenian Acropolis beneath a clear sky" loading="lazy" decoding="async" width="1200" height="820">
+      </div>
+      <div class="versus__content">
+        <h3 class="versus__name">ATHENS</h3>
+        <p class="versus__tag">The city of the mind</p>
+        <dl class="versus__list">
+          <div><dt>Government</dt><dd>Direct democracy — every citizen could speak and vote in the Assembly</dd></div>
+          <div><dt>Education</dt><dd>Reading, writing, music, gymnastics and rhetoric</dd></div>
+          <div><dt>Military</dt><dd>Citizen navy; a formidable fleet that ruled the Aegean</dd></div>
+          <div><dt>Society</dt><dd>Open, cosmopolitan, mercantile and argumentative</dd></div>
+          <div><dt>Culture</dt><dd>Tragedy and comedy, philosophy, the Acropolis building programme</dd></div>
+          <div><dt>Lifestyle</dt><dd>Symposia, debate, art and the pleasures of the city</dd></div>
+          <div><dt>Values</dt><dd>Freedom of speech, individuality, excellence (<em>aretē</em>)</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <div class="versus__divider" aria-hidden="true">
+      <span class="versus__divider-line"></span>
+      <span class="versus__divider-badge">VS</span>
+      <span class="versus__divider-line"></span>
+    </div>
+
+    <article class="versus__side versus__side--sparta" data-reveal="left">
+      <div class="versus__media" data-parallax="0.08">
+        <img src="https://images.pexels.com/photos/36621592/pexels-photo-36621592.jpeg?auto=compress&cs=tinysrgb&w=1200"
+             alt="Dramatic upward view of tall ancient columns against a bright sky" loading="lazy" decoding="async" width="1200" height="820">
+      </div>
+      <div class="versus__content">
+        <h3 class="versus__name">SPARTA</h3>
+        <p class="versus__tag">The city of the spear</p>
+        <dl class="versus__list">
+          <div><dt>Government</dt><dd>Mixed constitution — two kings, elders, ephors and an assembly</dd></div>
+          <div><dt>Education</dt><dd>The <em>agoge</em>: state training in endurance, pain and obedience</dd></div>
+          <div><dt>Military</dt><dd>The unchallenged land power of Greece; full-time hoplites</dd></div>
+          <div><dt>Society</dt><dd>Closed, austere, hierarchic; citizens were soldiers first</dd></div>
+          <div><dt>Culture</dt><dd>Choral poetry and laconic wit rather than theatre and theory</dd></div>
+          <div><dt>Lifestyle</dt><dd>Common messes, no coinage, no luxury, no walls until 184 BCE</dd></div>
+          <div><dt>Values</dt><dd>Discipline, equality among citizens, courage, the collective</dd></div>
+        </dl>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="meander" aria-hidden="true"></div>
+
+<!-- ============================================================ -->
+<!-- 6 · GREEK PHILOSOPHERS                                        -->
+<!-- ============================================================ -->
+<section class="section philosophy" id="philosophy" aria-labelledby="philosophy-title">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow" data-reveal="fade"><span class="eyebrow__num">05</span>The Examined Life</p>
+      <h2 class="section-title section-title--display" id="philosophy-title" data-reveal="up">GREEK PHILOSOPHERS</h2>
+      <p class="section-sub" data-reveal="up" style="--d:.1s">
+        Three men, two generations apart, who turned mythology into metaphysics and left the
+        Western tradition its central questions.
+      </p>
+    </header>
+
+    <div class="philosophers" data-stagger>
+      <article class="philosopher" data-reveal="up">
+        <div class="philosopher__portrait">
+          <img src="https://images.pexels.com/photos/6714846/pexels-photo-6714846.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="Classical marble bust of a bearded philosopher" loading="lazy" decoding="async" width="800" height="533">
+          <span class="philosopher__years">c. 470–399 BCE</span>
+        </div>
+        <div class="philosopher__body">
+          <h3 class="philosopher__name">SOCRATES</h3>
+          <p class="philosopher__bio">
+            He wrote nothing, owned nothing and questioned everyone. Athens condemned him to death
+            for "corrupting the youth" and "not believing in the city's gods" — and made him the
+            first great martyr of free thought.
+          </p>
+          <p class="philosopher__contrib"><strong>Contribution</strong> The Socratic method: relentless questioning that tests whether a belief can survive definition.</p>
+        </div>
+      </article>
+
+      <article class="philosopher" data-reveal="up">
+        <div class="philosopher__portrait">
+          <img src="https://images.pexels.com/photos/11840357/pexels-photo-11840357.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="Ancient sculptures displayed in a dimly lit museum hall" loading="lazy" decoding="async" width="800" height="533">
+          <span class="philosopher__years">c. 428–348 BCE</span>
+        </div>
+        <div class="philosopher__body">
+          <h3 class="philosopher__name">PLATO</h3>
+          <p class="philosopher__bio">
+            Socrates' student, who turned his teacher's questions into a system. He founded the
+            Academy in Athens — the institution that gave the word "academy" to every language
+            that now uses it.
+          </p>
+          <p class="philosopher__contrib"><strong>Contribution</strong> The Theory of Forms: that behind shifting appearances stands a permanent, intelligible reality.</p>
+        </div>
+      </article>
+
+      <article class="philosopher" data-reveal="up">
+        <div class="philosopher__portrait">
+          <img src="https://images.pexels.com/photos/11850293/pexels-photo-11850293.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="Detail of an ancient marble sculpture in a museum setting" loading="lazy" decoding="async" width="800" height="533">
+          <span class="philosopher__years">384–322 BCE</span>
+        </div>
+        <div class="philosopher__body">
+          <h3 class="philosopher__name">ARISTOTLE</h3>
+          <p class="philosopher__bio">
+            Plato's brightest student and Alexander's tutor, who brought philosophy down from the
+            heavens into the observable world. He classified animals, wrote on drama, logic,
+            ethics and politics — and shaped them all for two millennia.
+          </p>
+          <p class="philosopher__contrib"><strong>Contribution</strong> Formal logic and systematic empirical inquiry across every branch of knowledge.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Quote with typewriter / fade animation -->
+  <figure class="quote" id="quote">
+    <div class="quote__inner">
+      <span class="quote__mark" aria-hidden="true">«</span>
+      <blockquote class="quote__text" id="quoteText" data-full="The beginning of wisdom is the definition of terms."></blockquote>
+      <figcaption class="quote__cite">Socrates <span>· via Plato</span></figcaption>
+    </div>
+  </figure>
+</section>
+
+<div class="meander" aria-hidden="true"></div>
+
+<!-- ============================================================ -->
+<!-- 7 · MYTHOLOGY                                                 -->
+<!-- ============================================================ -->
+<section class="section mythology" id="mythology" aria-labelledby="mythology-title">
+  <div class="mythology__atmos" aria-hidden="true" data-parallax="0.12">
+    <img src="https://images.pexels.com/photos/37844485/pexels-photo-37844485.jpeg?auto=compress&cs=tinysrgb&w=1600"
+         alt="" loading="lazy" decoding="async" width="1600" height="1067">
+  </div>
+  <div class="mythology__veil" aria-hidden="true"></div>
+
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow" data-reveal="fade"><span class="eyebrow__num">06</span>The Pantheon</p>
+      <h2 class="section-title section-title--display" id="mythology-title" data-reveal="up">GODS OF OLYMPUS</h2>
+      <p class="section-sub" data-reveal="up" style="--d:.1s">
+        Twelve immortals on a mountain in Thessaly — quarrelling, scheming and loving with all
+        the excess of the human world they claimed to rule.
+      </p>
+    </header>
+
+    <ul class="gods" data-stagger>
+      <li class="god" data-reveal="up">
+        <div class="god__inner">
+          <span class="god__glow" aria-hidden="true"></span>
+          <svg class="god__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M26 4 10 26h10l-4 18 20-26H24l2-14Z" fill="currentColor"/></svg>
+          <h3 class="god__name">ZEUS</h3>
+          <p class="god__domain">Sky · Thunder · King of the Gods</p>
+          <p class="god__desc">Lord of Olympus who hurls the thunderbolt and keeps the oaths. He is justice, hospitality and the order of the heavens itself.</p>
+        </div>
+      </li>
+      <li class="god" data-reveal="up">
+        <div class="god__inner">
+          <span class="god__glow" aria-hidden="true"></span>
+          <svg class="god__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm-7 20h14l3 14H14l3-14Z" fill="currentColor"/><path d="M18 42h12v3H18z" fill="currentColor"/></svg>
+          <h3 class="god__name">ATHENA</h3>
+          <p class="god__domain">Wisdom · War · Craft</p>
+          <p class="god__desc">Born fully armed from the head of Zeus. Patron of Athens, of weaving, of strategy and of the disciplined courage that wins without slaughter.</p>
+        </div>
+      </li>
+      <li class="god" data-reveal="up">
+        <div class="god__inner">
+          <span class="god__glow" aria-hidden="true"></span>
+          <svg class="god__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5v38M8 15c8 0 16 6 16 6s8-6 16-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M8 33c8 0 16-6 16-6s8 6 16 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <h3 class="god__name">POSEIDON</h3>
+          <p class="god__domain">Sea · Storms · Earthquakes</p>
+          <p class="god__desc">Zeus' brother, who struck the ground with his trident to raise springs and shatter ships. The Greeks feared the sea because they knew him.</p>
+        </div>
+      </li>
+      <li class="god" data-reveal="up">
+        <div class="god__inner">
+          <span class="god__glow" aria-hidden="true"></span>
+          <svg class="god__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8c-6 4-9 9-9 15a9 9 0 0 0 18 0c0-6-3-11-9-15Z" fill="currentColor"/><path d="M18 36h12v4H18z" fill="currentColor"/></svg>
+          <h3 class="god__name">APOLLO</h3>
+          <p class="god__domain">Sun · Music · Prophecy</p>
+          <p class="god__desc">The archer of the silver bow and the lyre's master. He speaks through the priestess at Delphi and drives the sun across the sky each day.</p>
+        </div>
+      </li>
+      <li class="god" data-reveal="up">
+        <div class="god__inner">
+          <span class="god__glow" aria-hidden="true"></span>
+          <svg class="god__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 24c0-9 7-16 16-16s16 7 16 16" fill="none" stroke="currentColor" stroke-width="3"/><path d="M8 24h32" stroke="currentColor" stroke-width="3"/><path d="M24 24v18" stroke="currentColor" stroke-width="3"/></svg>
+          <h3 class="god__name">ARTEMIS</h3>
+          <p class="god__domain">Hunt · Moon · Wild Places</p>
+          <p class="god__desc">Apollo's twin, mistress of deer and of the untracked forest. She moves through the wilderness with her hounds, protector of young girls.</p>
+        </div>
+      </li>
+      <li class="god" data-reveal="up">
+        <div class="god__inner">
+          <span class="god__glow" aria-hidden="true"></span>
+          <svg class="god__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 42V6" stroke="currentColor" stroke-width="3"/><path d="m24 10 14 6-14 6z" fill="currentColor"/></svg>
+          <h3 class="god__name">ARES</h3>
+          <p class="god__domain">War · Bloodshed · Courage</p>
+          <p class="god__desc">The sheer frenzy of battle. Even among the Greeks he was distrusted — beloved by Aphrodite, hated by Athena, who represented war fought well.</p>
+        </div>
+      </li>
+      <li class="god" data-reveal="up">
+        <div class="god__inner">
+          <span class="god__glow" aria-hidden="true"></span>
+          <svg class="god__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40s14-9 14-19a8 8 0 0 0-14-5 8 8 0 0 0-14 5c0 10 14 19 14 19Z" fill="currentColor"/></svg>
+          <h3 class="god__name">APHRODITE</h3>
+          <p class="god__domain">Love · Beauty · Desire</p>
+          <p class="god__desc">Born of sea foam, she binds gods and mortals alike. Homer calls her the "laughter-loving"; the Greeks knew that desire rules even Olympus.</p>
+        </div>
+      </li>
+      <li class="god" data-reveal="up">
+        <div class="god__inner">
+          <span class="god__glow" aria-hidden="true"></span>
+          <svg class="god__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6v36" stroke="currentColor" stroke-width="3"/><path d="M14 16c6 0 10 4 10 8M34 16c-6 0-10 4-10 8" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="12" r="5" fill="currentColor"/></svg>
+          <h3 class="god__name">HERMES</h3>
+          <p class="god__domain">Messengers · Travel · Trade</p>
+          <p class="god__desc">Winged-sandalled herald of the gods, guide of souls and patron of thieves, merchants and lucky accidents. He moves between every world.</p>
+        </div>
+      </li>
+      <li class="god" data-reveal="up">
+        <div class="god__inner">
+          <span class="god__glow" aria-hidden="true"></span>
+          <svg class="god__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6 40 12v14c0 10-8 15-16 18-8-3-16-8-16-18V12L24 6Z" fill="currentColor"/></svg>
+          <h3 class="god__name">HADES</h3>
+          <p class="god__domain">Underworld · The Dead</p>
+          <p class="god__desc">Not evil, simply unavoidable. He rules the silent kingdom beneath the earth, from which no traveller returns unchanged.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="meander" aria-hidden="true"></div>
+
+<!-- ============================================================ -->
+<!-- 8 · GREEK ARCHITECTURE                                        -->
+<!-- ============================================================ -->
+<section class="section architecture" id="architecture" aria-labelledby="arch-title">
+  <div class="architecture__bg" data-parallax="0.2">
+    <img src="https://images.pexels.com/photos/28300846/pexels-photo-28300846.jpeg?auto=compress&cs=tinysrgb&w=1600"
+         alt="" loading="lazy" decoding="async" width="1600" height="1067">
+  </div>
+  <div class="architecture__veil" aria-hidden="true"></div>
+
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow" data-reveal="fade"><span class="eyebrow__num">07</span>Building in Stone</p>
+      <h2 class="section-title section-title--display" id="arch-title" data-reveal="up">GREEK ARCHITECTURE</h2>
+      <p class="section-sub" data-reveal="up" style="--d:.1s">
+        The Greeks built for the gods, but they designed for the human eye. Every proportion,
+        every curve and every column was calculated to be read by a person standing on the ground.
+      </p>
+    </header>
+
+    <!-- Scroll-based architectural reveal: columns appear as you scroll -->
+    <div class="temple" id="temple" aria-hidden="true">
+      <div class="temple__pediment"></div>
+      <div class="temple__architrave"></div>
+      <div class="temple__columns">
+        <span class="temple__col" style="--i:0"></span>
+        <span class="temple__col" style="--i:1"></span>
+        <span class="temple__col" style="--i:2"></span>
+        <span class="temple__col" style="--i:3"></span>
+        <span class="temple__col" style="--i:4"></span>
+        <span class="temple__col" style="--i:5"></span>
+      </div>
+      <div class="temple__stylobate"></div>
+    </div>
+
+    <div class="arch-grid" data-stagger>
+      <figure class="arch-card" data-reveal="up">
+        <div class="arch-card__media"><img src="https://images.pexels.com/photos/36621592/pexels-photo-36621592.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Towering Doric columns of the Parthenon seen from below" loading="lazy" decoding="async" width="800" height="533"></div>
+        <figcaption><h3>The Parthenon</h3><p>Athens, 447–432 BCE. Ictinus and Callicrates, with Phidias' sculpture. Its refinements — a slightly swelling shaft, an upward-curving base, inward-leaning columns — correct the eye's distortions.</p></figcaption>
+      </figure>
+      <figure class="arch-card" data-reveal="up">
+        <div class="arch-card__media"><img src="https://images.pexels.com/photos/32599351/pexels-photo-32599351.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Curved stone seating of the ancient theatre of Epidaurus" loading="lazy" decoding="async" width="800" height="533"></div>
+        <figcaption><h3>The Theatre</h3><p>Epidaurus, 4th c. BCE. Fourteen thousand seats cut into a hillside, where a coin dropped on the orchestra can still be heard in the top row.</p></figcaption>
+      </figure>
+      <figure class="arch-card" data-reveal="up">
+        <div class="arch-card__media"><img src="https://images.pexels.com/photos/13898501/pexels-photo-13898501.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ancient stone ruins photographed from a low angle" loading="lazy" decoding="async" width="800" height="533"></div>
+        <figcaption><h3>The Temple</h3><p>The standard form of the Greek sacred building: a cella housing the cult statue, wrapped in a colonnade, raised on steps and crowned by a sculpted pediment.</p></figcaption>
+      </figure>
+      <figure class="arch-card" data-reveal="up">
+        <div class="arch-card__media"><img src="https://images.pexels.com/photos/11850291/pexels-photo-11850291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Classical stone sculptures displayed together in a museum" loading="lazy" decoding="async" width="800" height="533"></div>
+        <figcaption><h3>Sculpture</h3><p>From the rigid <em>kouros</em> to the contrapposto of the Classical age, Greek sculptors taught stone to breathe, and set the canon of the human body for two thousand years.</p></figcaption>
+      </figure>
+    </div>
+
+    <!-- The three orders -->
+    <div class="orders">
+      <h3 class="orders__title" data-reveal="fade">DORIC <span aria-hidden="true">•</span> IONIC <span aria-hidden="true">•</span> CORINTHIAN</h3>
+      <div class="orders__grid" data-stagger>
+        <article class="order" data-reveal="up">
+          <div class="order__art order__art--doric" aria-hidden="true"><span class="order__cap"></span><span class="order__shaft"></span></div>
+          <h4>Doric</h4>
+          <p>The oldest and plainest. Sturdy, fluted, with a simple cushion capital and no base. It is the architecture of the mainland — of Sparta, Olympia and the Parthenon.</p>
+        </article>
+        <article class="order" data-reveal="up">
+          <div class="order__art order__art--ionic" aria-hidden="true"><span class="order__cap order__cap--ionic"></span><span class="order__shaft"></span></div>
+          <h4>Ionic</h4>
+          <p>Slimmer, taller and more elegant, with a base and a capital rolled into volutes like a ram's horn. Born in Ionia, it graces the Erechtheion and its famous porch of maidens.</p>
+        </article>
+        <article class="order" data-reveal="up">
+          <div class="order__art order__art--corinthian" aria-hidden="true"><span class="order__cap order__cap--corinthian"></span><span class="order__shaft"></span></div>
+          <h4>Corinthian</h4>
+          <p>The youngest and richest: a bell capital bursting with carved acanthus leaves. Rare in Greece, it became the favourite of Rome and of every classical building since.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander" aria-hidden="true"></div>
+
+<!-- ============================================================ -->
+<!-- 9 · GREEK WARS                                                -->
+<!-- ============================================================ -->
+<section class="section wars" id="wars" aria-labelledby="wars-title">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow" data-reveal="fade"><span class="eyebrow__num">08</span>Conflict</p>
+      <h2 class="section-title section-title--display" id="wars-title" data-reveal="up">GREEK WARS</h2>
+      <p class="section-sub" data-reveal="up" style="--d:.1s">
+        The wars that saved Greece — and then destroyed it. Hover a battle to locate it.
+      </p>
+    </header>
+
+    <div class="wars__layout">
+      <ol class="battles" id="battles">
+        <li class="battle" data-reveal="right" data-map="marathon">
+          <span class="battle__year">490 BCE</span>
+          <h3 class="battle__name">Battle of Marathon</h3>
+          <p class="battle__text">Ten thousand Athenians, joined by a small Plataean force, charged across a plain of the eastern Attic coast and broke the Persian landing army. The runner Pheidippides' legend begins here.</p>
+          <span class="battle__tag">Persian Wars</span>
+        </li>
+        <li class="battle" data-reveal="right" data-map="thermopylae">
+          <span class="battle__year">480 BCE</span>
+          <h3 class="battle__name">Battle of Thermopylae</h3>
+          <p class="battle__text">Leonidas and three hundred Spartans held a mountain pass against the army of Xerxes for three days. A defeat that became the definition of deliberate sacrifice.</p>
+          <span class="battle__tag">Persian Wars</span>
+        </li>
+        <li class="battle" data-reveal="right" data-map="salamis">
+          <span class="battle__year">480 BCE</span>
+          <h3 class="battle__name">Battle of Salamis</h3>
+          <p class="battle__text">Themistocles lured the Persian fleet into the narrow strait by the island of Salamis. In confined water the Persian numbers became a liability; Greece's triremes won the war at sea.</p>
+          <span class="battle__tag">Persian Wars</span>
+        </li>
+        <li class="battle" data-reveal="right" data-map="plataea">
+          <span class="battle__year">479 BCE</span>
+          <h3 class="battle__name">Battle of Plataea</h3>
+          <p class="battle__text">A Greek alliance of hoplites under the Spartan regent Pausanias finally destroyed the Persian expeditionary force on land, ending the invasion for good.</p>
+          <span class="battle__tag">Persian Wars</span>
+        </li>
+        <li class="battle" data-reveal="right" data-map="peloponnesian">
+          <span class="battle__year">431–404 BCE</span>
+          <h3 class="battle__name">The Peloponnesian War</h3>
+          <p class="battle__text">Athens and its empire against Sparta and the Peloponnesian League — twenty-seven years of plague, naval raids and siege that ended the golden age of both. Sparta won; Greece never recovered.</p>
+          <span class="battle__tag">Civil War</span>
+        </li>
+      </ol>
+
+      <!-- Stylised animated map -->
+      <div class="map" id="warMap" data-reveal="scale">
+        <svg viewBox="0 0 620 660" class="map__svg" role="img" aria-label="Stylised map of Greece showing the locations of Marathon, Thermopylae, Salamis, Plataea and the Peloponnese">
+          <defs>
+            <linearGradient id="mapSea" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#12232b"/><stop offset="1" stop-color="#0b161b"/>
+            </linearGradient>
+            <linearGradient id="mapLand" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2a2520"/><stop offset="1" stop-color="#191512"/>
+            </linearGradient>
+            <pattern id="mapGrid" width="31" height="31" patternUnits="userSpaceOnUse">
+              <path d="M31 0H0V31" fill="none" stroke="#F2E4DA" stroke-opacity="0.05" stroke-width="1"/>
+            </pattern>
+          </defs>
+
+          <rect width="620" height="660" fill="url(#mapSea)"/>
+          <rect width="620" height="660" fill="url(#mapGrid)"/>
+
+          <!-- Stylised landmass -->
+          <g fill="url(#mapLand)" stroke="#8C6239" stroke-opacity="0.5" stroke-width="1.2">
+            <path d="M120 120 210 96 300 128 356 108 404 150 372 186 400 214 360 236 372 268 340 292 300 300 288 330 250 336 236 372 260 404 240 440 190 452 150 430 128 392 96 372 84 330 104 296 92 258 70 226 88 190Z"/>
+            <path d="M404 150 470 138 512 168 492 206 438 214 400 214Z"/>
+            <path d="M150 470 246 460 296 486 282 540 200 566 146 542Z"/>
+            <path d="M60 560 128 552 152 588 96 616 44 600Z"/>
+            <path d="M470 250 506 262 500 300 462 296Z"/>
+            <path d="M520 330 556 322 566 356 528 366Z"/>
+            <path d="M330 560 380 552 392 586 340 598Z"/>
+          </g>
+
+          <!-- Mountain hatch marks (stylised) -->
+          <g stroke="#8C6239" stroke-opacity="0.35" stroke-width="1.4" fill="none">
+            <path d="M150 180 176 152 202 180M186 200 214 172 240 200M240 160 266 132 292 160"/>
+            <path d="M180 300 206 272 232 300M120 260 146 232 172 260"/>
+          </g>
+
+          <!-- Routes -->
+          <g class="map__routes" fill="none" stroke="#FFC928" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="7 9">
+            <path class="map__route" data-route="marathon"      d="M300 236 C 268 224 236 232 214 244"/>
+            <path class="map__route" data-route="thermopylae"   d="M262 160 C 240 152 218 154 200 158"/>
+            <path class="map__route" data-route="salamis"       d="M262 246 C 246 240 234 244 226 252"/>
+            <path class="map__route" data-route="plataea"       d="M254 250 C 250 232 250 218 252 206"/>
+            <path class="map__route" data-route="peloponnesian" d="M262 250 C 240 300 220 360 196 420"/>
+          </g>
+
+          <!-- Markers -->
+          <g class="map__markers">
+            <g class="map__marker" data-marker="marathon" transform="translate(210,248)">
+              <circle r="16" fill="#C81A25" fill-opacity="0.18"/><circle r="7" fill="#C81A25" stroke="#F2E4DA" stroke-width="2"/>
+              <text x="16" y="-10" fill="#F2E4DA" font-size="15" font-family="Inter, sans-serif" letter-spacing="1.4">MARATHON</text>
+            </g>
+            <g class="map__marker" data-marker="thermopylae" transform="translate(198,158)">
+              <circle r="16" fill="#C81A25" fill-opacity="0.18"/><circle r="7" fill="#C81A25" stroke="#F2E4DA" stroke-width="2"/>
+              <text x="16" y="-12" fill="#F2E4DA" font-size="15" font-family="Inter, sans-serif" letter-spacing="1.4">THERMOPYLAE</text>
+            </g>
+            <g class="map__marker" data-marker="salamis" transform="translate(222,256)">
+              <circle r="16" fill="#FFC928" fill-opacity="0.18"/><circle r="7" fill="#FFC928" stroke="#F2E4DA" stroke-width="2"/>
+              <text x="14" y="30" fill="#F2E4DA" font-size="15" font-family="Inter, sans-serif" letter-spacing="1.4">SALAMIS</text>
+            </g>
+            <g class="map__marker" data-marker="plataea" transform="translate(252,200)">
+              <circle r="16" fill="#C81A25" fill-opacity="0.18"/><circle r="7" fill="#C81A25" stroke="#F2E4DA" stroke-width="2"/>
+              <text x="16" y="6" fill="#F2E4DA" font-size="15" font-family="Inter, sans-serif" letter-spacing="1.4">PLATAEA</text>
+            </g>
+            <g class="map__marker" data-marker="peloponnesian" transform="translate(196,424)">
+              <circle r="18" fill="#FFC928" fill-opacity="0.16"/><circle r="8" fill="#FFC928" stroke="#F2E4DA" stroke-width="2"/>
+              <text x="20" y="6" fill="#F2E4DA" font-size="15" font-family="Inter, sans-serif" letter-spacing="1.4">SPARTA</text>
+            </g>
+            <g class="map__marker" transform="translate(252,244)">
+              <circle r="4" fill="#F2E4DA"/><text x="10" y="-8" fill="#F2E4DA" fill-opacity="0.75" font-size="13" font-family="Inter, sans-serif" letter-spacing="1.6">ATHENS</text>
+            </g>
+          </g>
+
+          <!-- Compass rose -->
+          <g transform="translate(552,596)" stroke="#FFC928" fill="none" stroke-width="1.4">
+            <circle r="26"/><path d="M0 -34V34M-26 0H26"/>
+            <path d="M0 -34 7 -10 0 0 -7 -10Z" fill="#FFC928" stroke="none"/>
+            <text x="-5" y="-40" fill="#FFC928" font-size="13" font-family="Cinzel, serif" stroke="none">N</text>
+          </g>
+        </svg>
+        <p class="map__caption">Stylised map of the Aegean world — positions approximate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander" aria-hidden="true"></div>
+
+<!-- ============================================================ -->
+<!-- 10 · ALEXANDER THE GREAT (sticky storytelling)                -->
+<!-- ============================================================ -->
+<section class="alexander" id="alexander" aria-labelledby="alex-title">
+  <div class="alexander__sticky">
+    <div class="alexander__bg" data-parallax="0.18">
+      <img src="https://images.pexels.com/photos/37844504/pexels-photo-37844504.jpeg?auto=compress&cs=tinysrgb&w=1600"
+           alt="" loading="lazy" decoding="async" width="1600" height="900">
+      <div class="alexander__bg-veil"></div>
+    </div>
+
+    <div class="alexander__head">
+      <p class="eyebrow" data-reveal="fade"><span class="eyebrow__num">09</span>Macedon</p>
+      <h2 class="section-title section-title--display" id="alex-title" data-reveal="up">ALEXANDER THE GREAT</h2>
+      <p class="section-sub alexander__sub" data-reveal="up" style="--d:.1s">
+        The conqueror who carried Greek culture across continents.
+      </p>
+    </div>
+
+    <div class="alexander__stage">
+      <!-- Expanding campaign map -->
+      <div class="campaign" id="campaign">
+        <svg viewBox="0 0 1200 520" class="campaign__svg" role="img" aria-label="Animated map of Alexander the Great's campaign route from Macedon to India">
+          <defs>
+            <linearGradient id="campSea" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0d1a24"/><stop offset="1" stop-color="#101b16"/>
+            </linearGradient>
+            <radialGradient id="campGlow">
+              <stop offset="0" stop-color="#FFC928" stop-opacity="0.55"/><stop offset="1" stop-color="#FFC928" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <rect width="1200" height="520" fill="url(#campSea)"/>
+          <g stroke="#F2E4DA" stroke-opacity="0.05" stroke-width="1">
+            <path d="M0 40H1200M0 120H1200M0 200H1200M0 280H1200M0 360H1200M0 440H1200"/>
+            <path d="M60 0V520M180 0V520M300 0V520M420 0V520M540 0V520M660 0V520M780 0V520M900 0V520M1020 0V520M1140 0V520"/>
+          </g>
+
+          <!-- Abstract continental landmass -->
+          <path class="campaign__land"
+                d="M40 190 C 120 150 220 160 300 140 C 400 118 470 150 560 138 C 660 124 720 152 810 140 C 900 128 980 158 1080 146 C 1140 138 1170 168 1160 210 C 1150 252 1080 268 1000 262 C 920 256 860 284 780 276 C 700 268 640 292 560 284 C 470 274 410 300 330 292 C 250 284 190 306 120 296 C 70 288 30 250 40 190 Z"
+                fill="#221d18" stroke="#8C6239" stroke-opacity="0.45" stroke-width="1.5"/>
+
+          <!-- Territory highlights (grow on scroll) -->
+          <g class="campaign__territories" fill="#FFC928" fill-opacity="0.1" stroke="#FFC928" stroke-opacity="0.35" stroke-width="1.2">
+            <circle class="campaign__territory" data-stage="0" cx="150" cy="215" r="96"/>
+            <circle class="campaign__territory" data-stage="1" cx="330" cy="220" r="96"/>
+            <circle class="campaign__territory" data-stage="2" cx="520" cy="210" r="96"/>
+            <circle class="campaign__territory" data-stage="3" cx="720" cy="215" r="96"/>
+            <circle class="campaign__territory" data-stage="4" cx="930" cy="205" r="96"/>
+            <circle class="campaign__territory" data-stage="5" cx="1105" cy="215" r="96"/>
+          </g>
+
+          <!-- Campaign route -->
+          <path class="campaign__route" id="campaignRoute"
+                d="M150 215 C 220 205 260 230 330 220 C 420 208 460 232 520 210 C 620 178 660 240 720 215 C 820 180 870 232 930 205 C 1010 172 1060 232 1105 215"
+                fill="none" stroke="#C81A25" stroke-width="3.5" stroke-linecap="round"/>
+
+          <!-- Waypoints -->
+          <g class="campaign__stops">
+            <g class="campaign__stop" data-stage="0" transform="translate(150,215)">
+              <circle class="campaign__halo" r="46"/><circle r="9" fill="#F2E4DA"/>
+              <text y="-32" text-anchor="middle" fill="#F2E4DA" font-size="16" font-family="Cinzel, serif" letter-spacing="2">MACEDON</text>
+              <text y="46" text-anchor="middle" fill="#F2E4DA" fill-opacity="0.6" font-size="12" font-family="Inter, sans-serif">334 BCE</text>
+            </g>
+            <g class="campaign__stop" data-stage="1" transform="translate(330,220)">
+              <circle class="campaign__halo" r="46"/><circle r="9" fill="#F2E4DA"/>
+              <text y="-32" text-anchor="middle" fill="#F2E4DA" font-size="16" font-family="Cinzel, serif" letter-spacing="2">PERSIA</text>
+              <text y="46" text-anchor="middle" fill="#F2E4DA" fill-opacity="0.6" font-size="12" font-family="Inter, sans-serif">333 BCE</text>
+            </g>
+            <g class="campaign__stop" data-stage="2" transform="translate(520,210)">
+              <circle class="campaign__halo" r="46"/><circle r="9" fill="#F2E4DA"/>
+              <text y="-32" text-anchor="middle" fill="#F2E4DA" font-size="16" font-family="Cinzel, serif" letter-spacing="2">EGYPT</text>
+              <text y="46" text-anchor="middle" fill="#F2E4DA" fill-opacity="0.6" font-size="12" font-family="Inter, sans-serif">331 BCE</text>
+            </g>
+            <g class="campaign__stop" data-stage="3" transform="translate(720,215)">
+              <circle class="campaign__halo" r="46"/><circle r="9" fill="#F2E4DA"/>
+              <text y="-32" text-anchor="middle" fill="#F2E4DA" font-size="16" font-family="Cinzel, serif" letter-spacing="2">CENTRAL ASIA</text>
+              <text y="46" text-anchor="middle" fill="#F2E4DA" fill-opacity="0.6" font-size="12" font-family="Inter, sans-serif">329 BCE</text>
+            </g>
+            <g class="campaign__stop" data-stage="4" transform="translate(930,205)">
+              <circle class="campaign__halo" r="46"/><circle r="9" fill="#F2E4DA"/>
+              <text y="-32" text-anchor="middle" fill="#F2E4DA" font-size="16" font-family="Cinzel, serif" letter-spacing="2">BACTRIA</text>
+              <text y="46" text-anchor="middle" fill="#F2E4DA" fill-opacity="0.6" font-size="12" font-family="Inter, sans-serif">327 BCE</text>
+            </g>
+            <g class="campaign__stop" data-stage="5" transform="translate(1105,215)">
+              <circle class="campaign__halo" r="46"/><circle r="9" fill="#FFC928"/>
+              <text y="-32" text-anchor="middle" fill="#FFC928" font-size="16" font-family="Cinzel, serif" letter-spacing="2">INDIA</text>
+              <text y="46" text-anchor="middle" fill="#F2E4DA" fill-opacity="0.6" font-size="12" font-family="Inter, sans-serif">326 BCE</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Scroll-driven narrative -->
+      <div class="alexander__narrative">
+        <ol class="stages" id="stages">
+          <li class="stage is-active" data-stage="0">
+            <span class="stage__num">01</span>
+            <h3 class="stage__title">Macedon</h3>
+            <p class="stage__text">In 336 BCE a twenty-year-old king inherited a kingdom on the northern edge of the Greek world — and an army his father Philip had forged into the finest weapon in Europe.</p>
+          </li>
+          <li class="stage" data-stage="1">
+            <span class="stage__num">02</span>
+            <h3 class="stage__title">Persia</h3>
+            <p class="stage__text">Crossing the Hellespont, Alexander smashed the Persian governors at the Granicus, unravelled the Gordian knot, and broke Darius III at Issus and Gaugamela. The Persian Empire fell in four years.</p>
+          </li>
+          <li class="stage" data-stage="2">
+            <span class="stage__num">03</span>
+            <h3 class="stage__title">Egypt</h3>
+            <p class="stage__text">Welcomed as a liberator, he was crowned pharaoh and founded the city that still bears his name — Alexandria — with its library, its lighthouse and its museum.</p>
+          </li>
+          <li class="stage" data-stage="3">
+            <span class="stage__num">04</span>
+            <h3 class="stage__title">Central Asia</h3>
+            <p class="stage__text">Through Bactria, Sogdiana and the Hindu Kush, across deserts and snow, fighting guerrillas and marrying princesses to bind the two worlds together.</p>
+          </li>
+          <li class="stage" data-stage="4">
+            <span class="stage__num">05</span>
+            <h3 class="stage__title">Bactria</h3>
+            <p class="stage__text">Greek cities were planted deep in Asia. Settlers, administrators and soldiers carried the language, theatre and gymnasium of Greece to the edge of the known world.</p>
+          </li>
+          <li class="stage" data-stage="5">
+            <span class="stage__num">06</span>
+            <h3 class="stage__title">India</h3>
+            <p class="stage__text">At the Hydaspes in 326 BCE he defeated King Porus — and then, at the demand of his exhausted men, turned back. He died in Babylon at thirty-two, and the Hellenistic age began.</p>
+          </li>
+        </ol>
+        <p class="alexander__hint" aria-hidden="true"><span class="alexander__hint-bar"><span id="alexFill"></span></span>Scroll to advance the campaign</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander" aria-hidden="true"></div>
+
+<!-- ============================================================ -->
+<!-- 11 · GREEK LEGACY                                             -->
+<!-- ============================================================ -->
+<section class="section legacy" id="legacy" aria-labelledby="legacy-title">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow" data-reveal="fade"><span class="eyebrow__num">10</span>The Inheritance</p>
+      <h2 class="section-title section-title--display" id="legacy-title" data-reveal="up">THE LEGACY OF GREECE</h2>
+      <p class="section-sub" data-reveal="up" style="--d:.1s">
+        Greece fell politically two thousand years ago. Its ideas never did. They are the load-bearing
+        walls of the modern world.
+      </p>
+    </header>
+
+    <ul class="legacy__words" data-stagger>
+      <li data-reveal="up"><span class="legacy__word">DEMOCRACY</span><span class="legacy__note">From <em>dēmos</em> + <em>kratos</em> — power to the citizen.</span></li>
+      <li data-reveal="up"><span class="legacy__word">PHILOSOPHY</span><span class="legacy__note">The love of wisdom as a discipline of argument.</span></li>
+      <li data-reveal="up"><span class="legacy__word">SCIENCE</span><span class="legacy__note">Nature explained by causes, not by caprice.</span></li>
+      <li data-reveal="up"><span class="legacy__word">ART</span><span class="legacy__note">The human body as the measure of beauty.</span></li>
+      <li data-reveal="up"><span class="legacy__word">ARCHITECTURE</span><span class="legacy__note">Columns, pediments and proportion, still copied.</span></li>
+      <li data-reveal="up"><span class="legacy__word">LITERATURE</span><span class="legacy__note">Epic, tragedy and the birth of the reader.</span></li>
+      <li data-reveal="up"><span class="legacy__word">MATHEMATICS</span><span class="legacy__note">Euclid's proof as the model of certainty.</span></li>
+      <li data-reveal="up"><span class="legacy__word">POLITICS</span><span class="legacy__note">Constitutions, citizenship and civic duty.</span></li>
+    </ul>
+
+    <div class="legacy__outro" data-reveal="up">
+      <p>
+        Every time a parliament debates, a jury deliberates, a doctor takes an oath, a student
+        sits an examination, a theatre dims its lights or an architect draws a column, a Greek
+        idea is being used again. The civilization ended; the conversation it started has never stopped.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 12 · FINAL CTA                                                -->
+<!-- ============================================================ -->
+<section class="final" id="final-cta" aria-labelledby="final-title">
+  <div class="final__pattern" aria-hidden="true"></div>
+  <div class="final__glow" aria-hidden="true"></div>
+  <div class="container final__inner">
+    <p class="eyebrow" data-reveal="fade">Fin</p>
+    <h2 class="final__title" id="final-title" data-reveal="up">THE PAST STILL SPEAKS.</h2>
+    <p class="final__sub" data-reveal="up" style="--d:.1s">
+      Discover the stories, ideas and people that shaped the Greek world.
+    </p>
+    <a href="#timeline" class="btn btn--gold btn--lg" data-reveal="up" style="--d:.2s" data-magnetic>
+      <span>EXPLORE THE TIMELINE</span>
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="nav__logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16M6 16h12M8 4h8v12H8z"/><path d="M8 4 4 6M16 4l4 2"/></svg>
+      </span>
+      <span>GREEK WORLD</span>
+    </div>
+    <p class="footer__note">An educational interactive experience. Imagery via Pexels; historical content summarised from standard scholarship.</p>
+    <a href="#hero" class="footer__top" data-magnetic>Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- ============================================================ -->
+<!-- CITY-STATE MODAL                                              -->
+<!-- ============================================================ -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="modalDialog">
+    <button class="modal__close" type="button" data-close aria-label="Close dialog">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="modal__media"><img id="modalImage" src="" alt="" loading="lazy" decoding="async"></div>
+    <div class="modal__body">
+      <p class="eyebrow" id="modalEyebrow">City-State</p>
+      <h3 class="modal__title" id="modalTitle">Athens</h3>
+      <div class="modal__text" id="modalText"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
